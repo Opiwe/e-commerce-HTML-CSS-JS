@@ -47,3 +47,8 @@ header{
     justify-content: space-between;
     padding: 20px 0;
 }
+
+#cart-icon{
+    font-size: 1.8rem;
+    cursor: pointer;
+}
