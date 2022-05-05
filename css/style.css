@@ -69,8 +69,9 @@ header{
 }
 
 .product-img{
-    width: 350px;
-    height: 380px;
+    width: 100%;
+    height: auto;
+    margin-bottom: 0.5rem;
 }
 
 /* Shop Content */
@@ -78,5 +79,19 @@ header{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, auto));
     gap: 4rem;
+}
+
+.product-box{
+    position: relative;
+    width: 350px;
+    height: 380px;
+    margin-bottom: 1.5rem;
+}
+
+.product-box:hover{
+    padding: 10px;
+    border: 1px solid var(--text-color);
+    transition: 0.4s;
+    
 }
 
