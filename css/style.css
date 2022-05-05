@@ -61,9 +61,22 @@ header{
     font-size: 1.5rem;
     font-weight: 600;
     text-align: center;
+    margin-bottom: 1.5rem;
 }
 
 .shop{
     margin-top: 2rem;
+}
+
+.product-img{
+    width: 350px;
+    height: 380px;
+}
+
+/* Shop Content */
+.shop-content{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, auto));
+    gap: 4rem;
 }
 
