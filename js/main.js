@@ -66,7 +66,12 @@ function addCartClicked(event){
     var title = shopProducts.getElementsByClassName('product-title')[0].innerText;
     var price = shopProducts.getElementsByClassName('price')[0].innerText;
     var productImg = shopProducts.getElementsByClassName('product-img')[0].src;
-    console.log(title, price, productImg);
+    addProductToCart(title, price, productImg);
+    updateTotal();
+}
+function  addProductToCart(title, price, productImg){
+    var cartShopBox = document.createElement('div');
+    // cartShopBox.classList.add('cart-box');
 }
 
 // Update Total
