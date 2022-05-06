@@ -30,6 +30,12 @@ function ready(){
         var button = removeCartButtons[i];
         button.addEventListener('click', removeCartItem)
     }
+    // Quantity Changes
+    var quanityInputs = document.getElementsByClassName('cart-quanity');
+    for (var i = 0; i < quanityInputs.length; i++){
+        var input = quanityInputs[i];
+        input.addEventListener("change", quantityChanged);
+    }
 }
 
 // Remove Items From Cart
