@@ -64,7 +64,9 @@ function addCartClicked(event){
     var button = event.target
     var shopProducts = button.parentElement
     var title = shopProducts.getElementsByClassName('product-title')[0].innerText;
-    console.log(title);
+    var price = shopProducts.getElementsByClassName('price')[0].innerText;
+    var productImg = shopProducts.getElementsByClassName('product-img')[0].src;
+    console.log(title, price, productImg);
 }
 
 // Update Total
