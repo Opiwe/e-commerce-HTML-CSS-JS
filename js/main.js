@@ -66,6 +66,8 @@ function updateTotal(){
         var price = parseFloat(priceElement.innerText.replace("R", ""));
         var quanity = quantityElement.value
         total = total + price * quanity;
+        //If price Contain some cents Value 
+        total = Math.round(total * 100) / 100; 
 
         document.getElementsByClassName('total-price')[0].innerText = 'R' + total;
     }
