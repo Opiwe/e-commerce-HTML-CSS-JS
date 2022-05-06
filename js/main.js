@@ -28,8 +28,13 @@ function ready(){
 
     for (let i = 0; i < removeCartButtons.length; i++) {
         var button = removeCartButtons[i];
-        button.addEventListener('click' removeCartItem)
+        button.addEventListener('click', removeCartItem)
     }
 }
 
 // Remove Items From Cart
+function  removeCartItem(event){
+    var buttonClicked = event.target
+    buttonClicked.parentElement.remove()
+}
+
