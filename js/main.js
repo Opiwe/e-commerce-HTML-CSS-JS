@@ -19,3 +19,10 @@ if(document.readyState == 'loading'){
 else{
     ready();
 }
+
+// Making Function
+function ready(){
+    // Remove Items From Cart
+    var removeCartButtons = document.getElementsByClassName('cart-remove');
+    
+}
