@@ -86,7 +86,7 @@ header{
 }
 
 .section-title{
-    font-size: 1.5rem;
+    font-size: 1rem;
     font-weight: 600;
     text-align: center;
     margin-bottom: 1.5rem;
@@ -131,6 +131,20 @@ header{
 
 .price{
     font-weight: 500;
+}
+
+.cart-quanity{
+    border: 1px solid var(--text-color);
+    outline: var(--main-color);
+    width: 2.4rem;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.cart-remove{
+    font-size: 24px;
+    color: var(--main-color);
+    cursor: pointer;
 }
 
 .add-cart{
