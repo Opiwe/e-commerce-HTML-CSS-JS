@@ -45,6 +45,14 @@ function  removeCartItem(event){
     updateTotal();
 }
 
+// Quantity changes
+function quantityChanged(event){
+    var input = event.target
+    if(){
+        
+    }
+}
+
 // Update Total
 function updateTotal(){ 
     var cartContent = document.getElementsByClassName('cart-content')[0];
