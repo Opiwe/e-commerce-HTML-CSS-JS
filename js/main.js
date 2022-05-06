@@ -24,5 +24,12 @@ else{
 function ready(){
     // Remove Items From Cart
     var removeCartButtons = document.getElementsByClassName('cart-remove');
-    
+    console.log(removeCartButtons)
+
+    for (let i = 0; i < removeCartButtons.length; i++) {
+        var button = removeCartButtons[i];
+        button.addEventListener('click' removeCartItem)
+    }
 }
+
+// Remove Items From Cart
