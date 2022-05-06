@@ -36,10 +36,11 @@ function ready(){
 function  removeCartItem(event){
     var buttonClicked = event.target
     buttonClicked.parentElement.remove()
+    updateTotal();
 }
 
 // Update Total
-function updatetotal(){
+function updateTotal(){ 
     var cartContent = document.getElementsByClassName('cart-content')[0];
     var cartBoxes = cartContent.getElementsByClassName('cart-box');
     var total = 0;
@@ -49,8 +50,8 @@ function updatetotal(){
         var quantityElement = cartBox.getElementsByClassName('cart-quanity')[0];
         var price = parseFloat(priceElement.innerText.replace("R", ""));
         var quanity = quantityElement.value
-        total = total + (price * quanity);
+        total = total + price * quanity;
 
-        
+        document.getElementsByClassName('total-price')[0].innerText = 'R' + total;
     }
 }
