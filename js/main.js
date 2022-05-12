@@ -11,12 +11,9 @@ closeCart.onclick = () => {
     cart.classList.remove("active");
 }
 
-
 // Cart Working JS
-if(document.readyState == 'loading'){
-    document.addEventListener('DOMContentLoaded', ready);
-}
-else{
+if (document.readyState == "loading") {
+    document.addEventListener("DOMContentLoaded", ready);
+}else{
     ready();
 }
-
