@@ -46,14 +46,14 @@ function ready(){
 
 // Remove Items From Cart
 function  removeCartItem(event){
-    var buttonClicked = event.target
+    var buttonClicked = event.target;
     buttonClicked.parentElement.remove();
     updateTotal();
 }
 
 // Quantity changes
 function quantityChanged(event){
-    var input = event.target
+    var input = event.target;
     if(isNaN(input.value) || input.value <= 0 ){
         input.value = 1;
     }
@@ -61,8 +61,8 @@ function quantityChanged(event){
 }
 // Add To Cart
 function addCartClicked(event){
-    var button = event.target
-    var shopProducts = button.parentElement
+    var button = event.target;
+    var shopProducts = button.parentElement;
     var title = shopProducts.getElementsByClassName('product-title')[0].innerText;
     var price = shopProducts.getElementsByClassName('price')[0].innerText;
     var productImg = shopProducts.getElementsByClassName('product-img')[0].src;
@@ -82,7 +82,7 @@ function  addProductToCart(title, price, productImg){
     }
 }
 var cartBoxContent = `
-                        <img src="./img/product2.jpeg" alt="" class="cart-img">
+                        <img src="R(productImg)" alt="" class="cart-img">
                         <div class="detail-box">
                             <div class="cart-product-title">Earbuds</div>
                             <div class="cart-price">R1571,48</div>
@@ -90,7 +90,8 @@ var cartBoxContent = `
                         </div>
                         <!-- Remove Cart -->
                         <i class='bx bxs-trash-alt cart-remove'></i>`;
-cartShopBox.innerHTML = cartBoxContent;
+
+// cartShopBox.innerHTML = cartBoxContent;
 cartItems.append(cartShopBox);
 cartShopBox
 .getElementsByClassName("cart-remove")[0]
