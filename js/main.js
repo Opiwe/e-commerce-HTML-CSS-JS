@@ -21,5 +21,17 @@ if (document.readyState == "loading") {
 // Making Function
 function ready(){
     // Remove Items From Cart
-    var removeCartButtons = document.getElementsByClassName('cart-remove')
+    var removeCartButtons = document.getElementsByClassName('cart-remove');
+    console.log(removeCartButtons);
+    for (var i = 0; i < removeCartButtons.length; i++) {
+        var button = removeCartButtons[i];
+        button.addEventListener("click", removeCartItem);
+        
+    }
+}
+
+// Remove Items From Cart
+function removeCartItem(event){
+    var buttonClicked = event.target;
+    buttonClicked.parentElement.remove();
 }
