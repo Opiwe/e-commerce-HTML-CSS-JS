@@ -90,6 +90,13 @@ header{
     margin-top: 1rem;
 }
 
+.cart-img{
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    padding: 10px;
+}
+
 .section-title{
     font-size: 1rem;
     font-weight: 600;
