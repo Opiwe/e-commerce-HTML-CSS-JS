@@ -97,6 +97,16 @@ header{
     padding: 10px;
 }
 
+.detail-box{
+    display: grid;
+    row-gap: 0.5rem;
+}
+
+.cart-product-title{
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
 .section-title{
     font-size: 1rem;
     font-weight: 600;
